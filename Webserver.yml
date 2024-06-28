@@ -5,5 +5,11 @@
   - name: uninstall httpd Webserver
     package: 
      name: httpd
-     state: absent
+     state: present
+  
+  - name: Start httpd service
+    service: 
+      name: httpd
+      state: started
+    
 
