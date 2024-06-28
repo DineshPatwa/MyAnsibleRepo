@@ -2,8 +2,8 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install httpd Webserver
+  - name: uninstall httpd Webserver
     package: 
      name: httpd
-     state: present
+     state: absent
 
