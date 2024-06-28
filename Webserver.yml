@@ -10,6 +10,6 @@
   - name: Start httpd service
     service: 
       name: httpd
-      state: started
+      state: stopped
     
 
